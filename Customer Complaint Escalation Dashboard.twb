@@ -1,0 +1,2128 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1117.1115                               -->
+<workbook original-version='18.1' source-build='2025.3.0 (20253.25.1117.1115)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' inline='true' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='customer_complaint_escalation_textual -' name='excel-direct.0lbyh0x0b28fqv194yffq1w3v1gs'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jishn/Downloads/customer_complaint_escalation_textual -.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0lbyh0x0b28fqv194yffq1w3v1gs' name='customer_complaint_escalation_t' table='[customer_complaint_escalation_t$]' type='table'>
+          <columns gridOrigin='A1:I2501:no:A1:I2501:0' header='yes' outcome='6'>
+            <column datatype='string' name='complaint_text' ordinal='0' />
+            <column datatype='real' name='sentiment_score' ordinal='1' />
+            <column datatype='string' name='complaint_channel' ordinal='2' />
+            <column datatype='string' name='product' ordinal='3' />
+            <column datatype='string' name='customer_tier' ordinal='4' />
+            <column datatype='integer' name='past_complaints' ordinal='5' />
+            <column datatype='integer' name='resolution_attempts' ordinal='6' />
+            <column datatype='integer' name='complaint_length' ordinal='7' />
+            <column datatype='integer' name='escalated' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I2501:no:A1:I2501:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complaint_text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[complaint_text]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>complaint_text</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sentiment_score]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>sentiment_score</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complaint_channel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[complaint_channel]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>complaint_channel</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>product</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_tier</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_tier]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>customer_tier</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>past_complaints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[past_complaints]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>past_complaints</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resolution_attempts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[resolution_attempts]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>resolution_attempts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complaint_length</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[complaint_length]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>complaint_length</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>escalated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[escalated]</local-name>
+            <parent-name>[customer_complaint_escalation_t]</parent-name>
+            <remote-alias>escalated</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Escalation Status' datatype='string' name='[Calculation_0221852733161472]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [escalated] = 1 THEN &quot;Escalated&quot;&#13;&#10;ELSE &quot;Not Escalated&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Escalation Rate (%)' datatype='real' default-format='p0.00%' name='[Calculation_0221852733333505]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([escalated])' />
+      </column>
+      <column caption='Record Count' datatype='integer' name='[Calculation_0221852737925122]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Escalated Count' datatype='integer' name='[Calculation_0830432554082305]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [escalated] = 1 THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Funnel Stage' datatype='string' name='[Calculation_1203717042667520]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [escalated] = 1 THEN &quot;Escalated Complaints&quot;&#13;&#10;ELSE &quot;Total Complaints&quot;&#13;&#10;END' />
+      </column>
+      <column caption='customer_complaint_escalation_t' datatype='table' name='[__tableau_internal_object_id__].[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]' role='measure' type='quantitative' />
+      <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+      <column caption='Complaint Length' datatype='integer' name='[complaint_length]' role='measure' type='quantitative' />
+      <column caption='Complaint Text' datatype='string' name='[complaint_text]' role='dimension' type='nominal' />
+      <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+      <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+      <column caption='Past Complaints' datatype='integer' name='[past_complaints]' role='measure' type='quantitative' />
+      <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+      <column caption='Resolution Attempts' datatype='integer' name='[resolution_attempts]' role='measure' type='quantitative' />
+      <column caption='Sentiment Score' datatype='real' name='[sentiment_score]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0221852733161472]' derivation='None' name='[none:Calculation_0221852733161472:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1203717042667520]' derivation='None' name='[none:Calculation_1203717042667520:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_0221852733333505]' derivation='User' name='[usr:Calculation_0221852733333505:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0830432554082305]' derivation='User' name='[usr:Calculation_0830432554082305:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Complaint Channel)' hidden='true' name='[Action (Complaint Channel)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[complaint_channel]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/jishn/AppData/Local/Temp/TableauTemp/#TableauTemp_0m0yf3e08e3ce3168ci10113amr1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/11/2026 09:31:16 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>complaint_text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[complaint_text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complaint_text</remote-alias>
+              <ordinal>0</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sentiment_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sentiment_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sentiment_score</remote-alias>
+              <ordinal>1</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>203</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>complaint_channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[complaint_channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complaint_channel</remote-alias>
+              <ordinal>2</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product</remote-alias>
+              <ordinal>3</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_tier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_tier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_tier</remote-alias>
+              <ordinal>4</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>past_complaints</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[past_complaints]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>past_complaints</remote-alias>
+              <ordinal>5</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>resolution_attempts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[resolution_attempts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>resolution_attempts</remote-alias>
+              <ordinal>6</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>complaint_length</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[complaint_length]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complaint_length</remote-alias>
+              <ordinal>7</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>escalated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[escalated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>escalated</remote-alias>
+              <ordinal>8</ordinal>
+              <family>customer_complaint_escalation_t</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_0221852733161472:nk]' type='palette'>
+            <map to='#9ca3a4'>
+              <bucket>&quot;Not Escalated&quot;</bucket>
+            </map>
+            <map to='#e74545'>
+              <bucket>&quot;Escalated&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#ca223c'>
+              <bucket>&quot;[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0830432554082305:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1203717042667520:nk]' type='palette'>
+            <map to='#9ca3a4'>
+              <bucket>&quot;Total Complaints&quot;</bucket>
+            </map>
+            <map to='#ca223c'>
+              <bucket>&quot;Escalated Complaints&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='customer_complaint_escalation_t' id='customer!complaint!escalation!t_B27B089CD8054FA584464F0AAACC4221'>
+            <properties context=''>
+              <relation connection='excel-direct.0lbyh0x0b28fqv194yffq1w3v1gs' name='customer_complaint_escalation_t' table='[customer_complaint_escalation_t$]' type='table'>
+                <columns gridOrigin='A1:I2501:no:A1:I2501:0' header='yes' outcome='6'>
+                  <column datatype='string' name='complaint_text' ordinal='0' />
+                  <column datatype='real' name='sentiment_score' ordinal='1' />
+                  <column datatype='string' name='complaint_channel' ordinal='2' />
+                  <column datatype='string' name='product' ordinal='3' />
+                  <column datatype='string' name='customer_tier' ordinal='4' />
+                  <column datatype='integer' name='past_complaints' ordinal='5' />
+                  <column datatype='integer' name='resolution_attempts' ordinal='6' />
+                  <column datatype='integer' name='complaint_length' ordinal='7' />
+                  <column datatype='integer' name='escalated' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+      <datasources>
+        <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+        <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+        <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+        <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+        <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+        <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+        <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]'>
+        <groupfilter function='level-members' level='[none:complaint_channel:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]'>
+        <groupfilter function='level-members' level='[none:customer_tier:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:product:nk]' member='&quot;Credit Card&quot;' />
+          <groupfilter function='member' level='[none:product:nk]' member='&quot;Insurance&quot;' />
+          <groupfilter function='member' level='[none:product:nk]' member='&quot;Internet Service&quot;' />
+          <groupfilter function='member' level='[none:product:nk]' member='&quot;Loan&quot;' />
+          <groupfilter function='member' level='[none:product:nk]' member='&quot;Mobile App&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Escalation Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Overall Escalation Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Status' datatype='string' name='[Calculation_0221852733161472]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [escalated] = 1 THEN &quot;Escalated&quot;&#13;&#10;ELSE &quot;Not Escalated&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Record Count' datatype='integer' name='[Calculation_0221852737925122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0221852733161472]' derivation='None' name='[none:Calculation_0221852733161472:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852737925122]' derivation='Sum' name='[sum:Calculation_0221852737925122:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[sum:Calculation_0221852737925122:qk]</rows>
+        <cols>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]</cols>
+      </table>
+      <simple-id uuid='{9BC57441-B6E8-437A-A34A-E9E28E0EE7AC}' />
+    </worksheet>
+    <worksheet name='Escalation Distribution-Pie'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Benton Sans Book'>Escalation Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Status' datatype='string' name='[Calculation_0221852733161472]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [escalated] = 1 THEN &quot;Escalated&quot;&#13;&#10;ELSE &quot;Not Escalated&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Record Count' datatype='integer' name='[Calculation_0221852737925122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0221852733161472]' derivation='None' name='[none:Calculation_0221852733161472:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0221852737925122]' derivation='Sum' name='[pcto:sum:Calculation_0221852737925122:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852737925122]' derivation='Sum' name='[sum:Calculation_0221852737925122:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' />
+              <wedge-size column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[sum:Calculation_0221852737925122:qk]' />
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[pcto:sum:Calculation_0221852737925122:qk]' />
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[pcto:sum:Calculation_0221852737925122:qk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='off' />
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1314364671707153' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EEEE0C8B-35C7-48F2-A5F1-EAC1222510C6}' />
+    </worksheet>
+    <worksheet name='Escalation Risk Heatmap (Advanced)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' italic='true'>Escalation Risk</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Rate (%)' datatype='real' default-format='p0.00%' name='[Calculation_0221852733333505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([escalated])' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852733333505]' derivation='User' name='[usr:Calculation_0221852733333505:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' value='#000000' />
+            <format attr='text-align' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' value='Customer Tier'>
+              <formatted-text>
+                <run fontalignment='1' italic='true'>Customer Tier</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' value='Complaint Channel'>
+              <formatted-text>
+                <run fontalignment='1' italic='true'>Complaint Channel</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</rows>
+        <cols>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</cols>
+      </table>
+      <simple-id uuid='{9E9D3DD5-6314-40E5-AE5B-E37927702152}' />
+    </worksheet>
+    <worksheet name='Escalation by Channel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' italic='true'>Escalation Rate by Complaint Channel</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Rate (%)' datatype='real' default-format='p0.00%' name='[Calculation_0221852733333505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([escalated])' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852733333505]' derivation='User' name='[usr:Calculation_0221852733333505:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' value='Customer Tier'>
+              <formatted-text>
+                <run fontalignment='1'>Customer Tier</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' value='Complaint Channel'>
+              <formatted-text>
+                <run fontalignment='1'>Complaint Channel</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</rows>
+        <cols>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</cols>
+      </table>
+      <simple-id uuid='{12F4D921-EDCA-45AF-8D56-E61A3237526F}' />
+    </worksheet>
+    <worksheet name='Escalation by Customer Tier'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' italic='true'>Escalation Rate by Customer Tier</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Rate (%)' datatype='real' default-format='p0.00%' name='[Calculation_0221852733333505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([escalated])' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852733333505]' derivation='User' name='[usr:Calculation_0221852733333505:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</rows>
+        <cols>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</cols>
+      </table>
+      <simple-id uuid='{0EBF30B7-043F-4620-B2C4-F622D477D763}' />
+    </worksheet>
+    <worksheet name='Escalation by Product'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans SemiDemi' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Rate (%)' datatype='real' default-format='p0.00%' name='[Calculation_0221852733333505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([escalated])' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852733333505]' derivation='User' name='[usr:Calculation_0221852733333505:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' included-values='all' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' value='normal' />
+            <format attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' value='Product'>
+              <formatted-text>
+                <run fontalignment='1'>Product</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' value='Customer Tier'>
+              <formatted-text>
+                <run fontalignment='1' italic='true'>Customer Tier</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' value='Complaint Channel'>
+              <formatted-text>
+                <run fontalignment='1' italic='true'>Complaint Channel</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</rows>
+        <cols>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</cols>
+      </table>
+      <simple-id uuid='{83E55FFE-97DB-4570-AC04-C42B8BABDC94}' />
+    </worksheet>
+    <worksheet name='KPI – Escalated Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalated Count' datatype='integer' name='[Calculation_0830432554082305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [escalated] = 1 THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0830432554082305]' derivation='User' name='[usr:Calculation_0830432554082305:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='59' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='wrap' data-class='total' scope='cols' value='off' />
+            <format attr='wrap' data-class='total' scope='rows' value='off' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0830432554082305:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='12' italic='true'>ESCALATED COMPLAINTS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ff0000' fontsize='28'><![CDATA[<[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0830432554082305:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B3E5B8B6-D4E7-48AD-8CC8-89D79C698FA7}' />
+    </worksheet>
+    <worksheet name='KPI – Escalation Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Rate (%)' datatype='real' default-format='p0.00%' name='[Calculation_0221852733333505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([escalated])' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852733333505]' derivation='User' name='[usr:Calculation_0221852733333505:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='59' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='wrap' data-class='total' scope='cols' value='off' />
+            <format attr='wrap' data-class='total' scope='rows' value='off' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Benton Sans Book' fontsize='12' italic='true'>ESCALATION RATE</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ff0000' fontsize='28'><![CDATA[<[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{781E5754-6063-4503-B53E-417F3D9F7F24}' />
+    </worksheet>
+    <worksheet name='KPI – Total Complaints'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Record Count' datatype='integer' name='[Calculation_0221852737925122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0221852737925122]' derivation='Sum' name='[sum:Calculation_0221852737925122:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='59' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='wrap' data-class='total' scope='cols' value='off' />
+            <format attr='wrap' data-class='total' scope='rows' value='off' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[sum:Calculation_0221852737925122:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='12' italic='true'>TOTAL COMPLAINTS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='28'>2,500</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0CE874AB-A55C-4881-9BD4-98393F5A2423}' />
+    </worksheet>
+    <worksheet name='Sentiment Impact'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' italic='true'>Sentiment vs Escalation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+            <column caption='Escalation Status' datatype='string' name='[Calculation_0221852733161472]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [escalated] = 1 THEN &quot;Escalated&quot;&#13;&#10;ELSE &quot;Not Escalated&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[sentiment_score]' derivation='Avg' name='[avg:sentiment_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+            <column caption='Complaint Text' datatype='string' name='[complaint_text]' role='dimension' type='nominal' />
+            <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+            <column caption='Escalated' datatype='integer' name='[escalated]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0221852733161472]' derivation='None' name='[none:Calculation_0221852733161472:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_text]' derivation='None' name='[none:complaint_text:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column caption='Sentiment Score' datatype='real' name='[sentiment_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]</column>
+            <column>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[avg:sentiment_score:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='19' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[avg:sentiment_score:qk]' value='#000000' />
+            <format attr='color' field='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' />
+              <lod column='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_text:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#003cff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[avg:sentiment_score:qk]</rows>
+        <cols>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]</cols>
+      </table>
+      <simple-id uuid='{9A30A106-DB34-4946-99F6-376312ABA70D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Customer Complaint Escalation Dashboard Project Dash'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f6eee3' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='customer_complaint_escalation_t (customer_complaint_escalation_textual -)' name='federated.0oh2uex11mkp1x1fo4hco1e5lwzo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0oh2uex11mkp1x1fo4hco1e5lwzo'>
+        <column caption='Complaint Channel' datatype='string' name='[complaint_channel]' role='dimension' type='nominal' />
+        <column caption='Customer Tier' datatype='string' name='[customer_tier]' role='dimension' type='nominal' />
+        <column-instance column='[complaint_channel]' derivation='None' name='[none:complaint_channel:nk]' pivot='key' type='nominal' />
+        <column-instance column='[customer_tier]' derivation='None' name='[none:customer_tier:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='15331' id='4' name='KPI – Total Complaints' show-title='false' w='15943' x='40678' y='22300'>
+          <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='0' />
+            <format attr='padding' value='4' />
+          </zone-style>
+        </zone>
+        <zone h='11614' id='11' name='KPI – Escalation Rate' show-title='false' w='14243' x='2354' y='24506' />
+        <zone h='13500' id='12' name='KPI – Escalated Count' show-title='false' w='18429' x='78143' y='23625' />
+        <zone h='72875' id='13' name='Escalation Distribution-Pie' show-title='false' w='37286' x='10714' y='18125' />
+        <zone h='20209' id='16' name='Escalation by Channel' w='25166' x='1388' y='76423' />
+        <zone h='20500' id='17' name='Escalation by Customer Tier' w='24714' x='73071' y='76000' />
+        <zone h='22000' id='18' name='Sentiment Impact' w='32571' x='32429' y='75375' />
+        <zone h='42509' id='19' is-centered='0' is-scaled='1' param='C:/Users/jishn/Downloads/ChatGPT Image Jan 11, 2026, 08_31_06 PM.png' type-v2='bitmap' w='27436' x='36123' y='-5807' />
+        <zone h='30125' id='20' name='Escalation Risk Heatmap (Advanced)' w='27071' x='55714' y='39250' />
+        <zone h='8125' id='22' mode='checkdropdown' name='Escalation Risk Heatmap (Advanced)' param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type-v2='filter' values='database' w='9143' x='89286' y='12375' />
+        <zone h='8125' id='23' mode='checkdropdown' name='Escalation Risk Heatmap (Advanced)' param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type-v2='filter' values='database' w='9143' x='80000' y='12375' />
+      </zones>
+      <simple-id uuid='{B707AD12-0CAF-4F5F-828C-0F8C1EDC5A28}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' show-side-pane='false' source-height='37'>
+    <window class='worksheet' name='Escalation Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1BA000DD-5807-48DC-BB47-2236AB2B9102}' />
+    </window>
+    <window class='worksheet' name='Escalation by Channel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{820C873A-B926-424B-951C-47A1C03680F4}' />
+    </window>
+    <window class='worksheet' name='Escalation by Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EA961F7A-FA2F-4268-873B-FC8745236030}' />
+    </window>
+    <window class='worksheet' name='Sentiment Impact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8A51D06A-04F1-4C4A-90C7-D62FE1BC1BFC}' />
+    </window>
+    <window class='worksheet' name='Escalation by Customer Tier'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CBE2D008-DC2C-4CDA-8C2B-271B7162EDFD}' />
+    </window>
+    <window class='worksheet' name='KPI – Total Complaints'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6346C131-6CE4-493F-931E-0DA936814053}' />
+    </window>
+    <window class='worksheet' name='KPI – Escalation Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{674CEB8E-3A1C-4B76-A17D-9559E78D02A0}' />
+    </window>
+    <window class='worksheet' name='KPI – Escalated Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:product:nk]' type='filter' />
+            <card param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:customer_tier:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{920059EF-B73A-449C-992C-306D43C14EA8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Customer Complaint Escalation Dashboard Project Dash'>
+      <viewpoints>
+        <viewpoint name='Escalation Distribution-Pie'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Escalation Risk Heatmap (Advanced)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Escalation by Channel'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:complaint_channel:nk]</field>
+                    <field>[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Social Media&quot;</value>
+                  <value>0.41598694942903752</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Escalation by Customer Tier'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI – Escalated Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI – Escalation Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI – Total Complaints'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sentiment Impact'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8BF970BD-8B96-4147-BB85-3454BF4964A4}' />
+    </window>
+    <window class='worksheet' name='Escalation Distribution-Pie'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[none:Calculation_0221852733161472:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EDD57FDA-3095-4281-9E93-DB6D1BE59F04}' />
+    </window>
+    <window class='worksheet' name='Escalation Risk Heatmap (Advanced)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0oh2uex11mkp1x1fo4hco1e5lwzo].[usr:Calculation_0221852733333505:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C5C05754-A6A7-4281-96BA-2FF97D02E41B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Customer Complaint Escalation Dashboard Project Dash' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Escalation Distribution-Pie' width='192'>
+      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
+      YwCktH8D0sDgXISNppIAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Escalation Risk Heatmap (Advanced)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Escalation by Customer Tier' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADiklEQVR4nO3cMU5jZxiF4e/apgAkasQq2AWbyi6yiexgVkBHGVGjSFhuQEkmEhrG9/9S
+      JdIoFbl4YDjP0wBCPv5t+TVXLpi6uwtCrd76APCWDhrAPM+LN/b7/YfY6O7Fz8d72Rhj1Bjj
+      Q2z4C/AdfaSrzY/yWARANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBE
+      EwDRBEA0ARBNAEQTANEEQDQBEG1zyPHffvlUv/7088KVrqrpA2z8829EbLynjYMGML5+rf2f
+      fx3yLmARl0BEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQT
+      ANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBE
+      EwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0A
+      RBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEO3FAdzc3NT19XVtt9v//O7+/v5VDgXf
+      y+alN9jtdnV6eloPDw91e3tbx8fH9fj4WBcXF/X8/Fx3d3d1cnJSl5eXhzgvvKoXB3B0dFTd
+      Xbvdrp6enmqe5zo/P6/tdltnZ2fV3bXZvHgW3sSLX6lXV1f/fj/Pc63X65rnuVarVU3TVN1d
+      Y4yapulVDwqHsOiter1ef/O1qmqapm9+hvfMp0BEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA
+      0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQT
+      ANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBE
+      EwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEG3q
+      7j7U+Jc/Ptf+98+LNuZ5rvV6/eNvdNU8lm10d40xFm/06Fqt//97X3dXd9dqtWBjjOqqRRtj
+      jKqFGwcN4DVeePv9vjabzQ+/0d01z/PijdcIYOnGGKO6e/FG1dsH4BKIaAIgmgCIJgCiCYBo
+      AiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGh/Ayb55hj8N6dj
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sentiment Impact' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
